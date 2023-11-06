@@ -5,39 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bharat Kharpuse</title>
     <style>
-        /* Your existing styles remain the same */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa; /* Light gray background */
+            color: #343a40; /* Dark text color */
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #007bff; /* Blue header background */
+            color: #fff; /* White text color */
+            text-align: center;
+            padding: 20px;
+        }
 
         .profile-container {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             align-items: flex-start;
             margin-bottom: 20px; /* Add some space below the profile container */
+            padding: 20px;
+            background-color: #fff; /* White section background */
+            border-radius: 10px; /* Add rounded corners */
         }
-       .profile-image {
-          position: absolute;
-            top: 0;
-            left: 0;
-           width: 250px;
-               height: 250px;
-         border-radius: 80%;
-           margin: 20px auto;
-           display: block;
-          }
 
         .profile-details {
-            text-align: right;
-            position: absolute;
-            top: 0;
-            right: 0;
+            flex: 1;
+            margin-left: 20px; /* Add some space between profile and details */
+        }
+
+        .profile-image {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            margin: 20px auto;
+            display: block;
         }
 
         .contact-info {
             text-align: left;
+            margin-top: 20px; /* Add some space above contact info */
         }
+
         .second-image {
-            position: absolute;
-            bottom: 0;
-            right: 0;
+            max-width: 100%; /* Make sure the image doesn't exceed container width */
+            display: block;
+            margin: 20px auto; /* Center the image */
+        }
     </style>
 </head>
 <body>
@@ -56,13 +71,13 @@
                 <li>...</li>
             </ul>
         </div>
-        <div class="contact-info">
-            <h2>Contact Information</h2>
-            <p>Email: bharatkharpuse@gmail.com</p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/bharat-pawar-369728161/">Bharat Kharpuse</a></p>
-            <h2>CV</h2>
-            <p>Download my CV: <a href="Bharat_CVU.pdf" target="_blank">Bharat_CVU.pdf</a></p>
-        </div>
+    </div>
+    <div class="contact-info">
+        <h2>Contact Information</h2>
+        <p>Email: bharatkharpuse@gmail.com</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/bharat-pawar-369728161/">Bharat Kharpuse</a></p>
+        <h2>CV</h2>
+        <p>Download my CV: <a href="Bharat_CVU.pdf" target="_blank">Bharat_CVU.pdf</a></p>
     </div>
     <img class="second-image" src="Nuclear-landscanuclear_chart.jpg" alt="Second Image">
 </body>
