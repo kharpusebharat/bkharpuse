@@ -26,13 +26,13 @@
             align-items: flex-start;
             margin-bottom: 20px; /* Add some space below the profile container */
             padding: 20px;
-          /*  background-color: #fff; /* White section background */
             border-radius: 10px; /* Add rounded corners */
         }
 
         .profile-details {
             flex: 1;
             margin-left: 20px; /* Add some space between profile and details */
+            text-align: left;
         }
 
         .profile-image {
@@ -48,20 +48,19 @@
             margin-top: 20px; /* Add some space above contact info */
         }
 
-        .second-image {
+        .second-image, .vecc-image {
             max-width: 100%; /* Make sure the image doesn't exceed container width */
             display: block;
-        */    margin: 20px auto; /* Center the image */
-            bottom: 0;
-            right: 0;
+            margin: 20px auto; /* Center the image */
         }
-        .vecc_image {
-            width: 450px;
-            height: 450px;
-            display: block;
-         */   margin: 20px auto; /* Center the image */
-            bottom: 0;
-            right: -1;
+
+        .second-image {
+            float: right;
+            margin-left: 20px;
+        }
+
+        .vecc-image {
+            float: right;
         }
     </style>
 </head>
@@ -90,6 +89,6 @@
         <p>Download my CV: <a href="Bharat_CVU.pdf" target="_blank">Bharat_CVU.pdf</a></p>
     </div>
     <img class="second-image" src="Nuclear-landscanuclear_chart.jpg" alt="Second Image">
-    <img class="vecc_image" src="bharat_vecc.jpg" alt="vecc image">
+    <img class="vecc-image" src="bharat_vecc.jpg" alt="vecc image">
 </body>
 </html>
