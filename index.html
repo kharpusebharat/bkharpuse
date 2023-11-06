@@ -13,6 +13,13 @@
             align-items: flex-start;
             margin-bottom: 20px; /* Add some space below the profile container */
         }
+       .profile-image {
+           width: 150px;
+               height: 150px;
+         border-radius: 50%;
+           margin: 20px auto;
+           display: block;
+          }
 
         .profile-details {
             text-align: left;
@@ -21,6 +28,10 @@
         .contact-info {
             text-align: left;
         }
+        .second-image {
+            position: absolute;
+            bottom: 0;
+            right: 0;
     </style>
 </head>
 <body>
@@ -47,6 +58,6 @@
             <p>Download my CV: <a href="Bharat_CVU.pdf" target="_blank">Bharat_CVU.pdf</a></p>
         </div>
     </div>
-    <img src="Nuclear-landscanuclear_chart.jpg" alt="Second Image">
+    <img class="second-image" src="Nuclear-landscanuclear_chart.jpg" alt="Second Image">
 </body>
 </html>
