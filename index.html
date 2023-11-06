@@ -9,17 +9,17 @@
 
         .profile-container {
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             align-items: flex-start;
+            margin-bottom: 20px; /* Add some space below the profile container */
         }
 
-        .personal-details {
-            flex: 1;
-            margin-right: 20px; /* Add some space between profile and personal details */
+        .profile-details {
+            text-align: left;
         }
 
-        .right-image {
-            flex: 1;
+        .contact-info {
+            text-align: left;
         }
     </style>
 </head>
@@ -28,31 +28,25 @@
         <h1>Bharat Kharpuse</h1>
     </header>
     <div class="profile-container">
-        <div class="personal-details">
-            <img class="profile-image" src="bharat1.jpg" alt="Profile Image">
+        <img class="profile-image" src="bharat1.jpg" alt="Profile Image">
+        <div class="profile-details">
             <h2>About Me</h2>
             <p>I am a Junior Research Fellow under SERB project in the field of nuclear physics at Visva-Bharati, Santiniketan. My research interests include the study of nuclear structure and nucleon interaction. </p>
+            <h2>Research Interests</h2>
+            <ul>
+                <li>Nuclear Structure</li>
+                <li>Gamma-ray Spectroscopy</li>
+                <li>...</li>
+            </ul>
         </div>
-        <div class="right-image">
-            <img src="bharat2.jpg" alt="Right Image">
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <p>Email: bharatkharpuse@gmail.com</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/bharat-pawar-369728161/">Bharat Kharpuse</a></p>
+            <h2>CV</h2>
+            <p>Download my CV: <a href="Bharat_CVU.pdf" target="_blank">Bharat_CVU.pdf</a></p>
         </div>
     </div>
-    <section>
-        <h2>Research Interests</h2>
-        <ul>
-            <li>Nuclear Structure</li>
-            <li>Gamma-ray Spectroscopy</li>
-            <li>...</li>
-        </ul>
-    </section>
-    <section>
-        <h2>Contact Information</h2>
-        <p>Email: bharatkharpuse@gmail.com</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/bharat-pawar-369728161/">Bharat Kharpuse</a></p>
-    </section>
-    <section>
-        <h2>CV</h2>
-        <p>Download my CV: <a href="Bharat_CVU.pdf" target="_blank">Bharat_CVU.pdf</a></p>
-    </section>
+    <img src="Nuclear-landscanuclear_chart.jpg" alt="Second Image">
 </body>
 </html>
