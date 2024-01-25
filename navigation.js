@@ -6,7 +6,10 @@ function showSection(sectionId) {
     });
 
     // Show the selected section
-    document.querySelector('.' + sectionId).style.display = 'block';
+    var selectedSection = document.querySelector('.' + sectionId.toLowerCase());
+    if (selectedSection) {
+        selectedSection.style.display = 'block';
+    }
 
     // Remove the 'active' class from all buttons
     document.querySelectorAll('.navigation button').forEach(function(button) {
@@ -14,5 +17,5 @@ function showSection(sectionId) {
     });
 
     // Add the 'active' class to the clicked button
-    document.querySelector('[onclick="showSection(\'' + sectionId + '\')"]').classList.add('active');
+    document.querySelector('[onclick="showSection(\'' + sectionId.toLowerCase() + '\')"]').classList.add('active');
 }
