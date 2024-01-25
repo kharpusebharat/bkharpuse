@@ -91,6 +91,7 @@
     <!-- New navigation section -->
     <div class="navigation">
         <button onclick="showSection('profile-details')" class="active">About Me</button>
+         <button onclick="showSection('research')">Research</button>
         <button onclick="showSection('publications')">Publications</button>
         <button onclick="showSection('contact-info')">Contact</button>
     </div>
@@ -98,22 +99,25 @@
  <div class="vecc-image">
        <p>INGA-2023 at VECC-Kolkata</p>
 </div>
-    <div class="profile-container">
+    <div class="profile-container profile-details">
         <img class="profile-image" src="bharat_img.jpeg" alt="Profile Image">
         <div class="profile-details">
-            <h2>About Me</h2>
-            <p>I am a Junior Research Fellow under the SERB project in the field of nuclear physics at IIT-Roorkee, India <br> My research interests include the study of nuclear structure and nucleon reaction. </p>
-            <div class="research">
-            <h2>Research Interests</h2>
-            <ul>
-                <li>Nuclear Structure</li>
-                <li>Gamma-ray Spectroscopy</li>
-                <li>Nuclear Reaction</li>
-            </ul>
+            <!-- Your existing content -->
+        </div>
+    </div>
+
+    <div class="profile-container research" style="display: none;">
+        <h2>Research Interests</h2>
+        <ul>
+            <li>Nuclear Structure</li>
+            <li>Gamma-ray Spectroscopy</li>
+            <li>Nuclear Reaction</li>
+        </ul>
+    </div>
              
-            <div class="publications">
-                <h2>Publications</h2>
-                <ol>
+          <div class="profile-container publications" style="display: none;">
+        <h2>Publications</h2>
+        <ol>
                     <li>
                 <strong>Bharat Kharpuse</strong>, Sramana Biswas, K. Bhandary, S. Barman, A. Biswas, A. Goswami, S. Maiti, A.K. Mondal, U.S. Ghosh, S. Rai, K. Mandal, S. Mondal, Saumyajit Biswas, B. Mukherjee, A. Chakraborty, U.D. Pramanik, S. Chakraborty, Yashraj, I. Bala, K. Katre, A. Sharma, R.P. Singh, S. Muralithar.
                 <em>"In-beam γ-ray spectroscopy of <sup>69</sup>Ge".</em> <span>Abstract accepted in DAE-BRNS Conference-2023</span>
@@ -140,9 +144,8 @@
             </li>
                 </ol>
            </div>
-        </div>
-    </div>
-    <div class="contact-info">
+       
+   <div class="contact-info" style="display: none;">
         <h2>Contact Information</h2>
         <p>Email: bharatkharpuse@gmail.com</p>
         <p> <a href="https://www.linkedin.com/in/bharat-pawar-369728161/">LinkedIn</a></p>
@@ -154,7 +157,10 @@
     <script>
         // Show the default section on page load
         showSection('profile-details');
+        
+     function showPublicationSection() {
         showSection('publication');
+     }
     </script>
 </body>
 </html>
