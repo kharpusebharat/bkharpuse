@@ -66,13 +66,35 @@
             top: 120px; /* Adjusted top position */
             right: 10px; /* Adjusted right position */
         }
-        
+        .navigation {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .navigation button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .active {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>Mr. Bharat Kharpuse</h1>
     </header>
+    <!-- New navigation section -->
+    <div class="navigation">
+        <button onclick="showSection('AboutMe')" class="active">About Me</button>
+        <button onclick="showSection('research')">Research</button>
+        <button onclick="showSection('publications')">Publications</button>
+        <button onclick="showSection('contact')">Contact</button>
+    </div>
     <img class="vecc-image" src="bharat_vecc.jpg" alt="vecc image">
  <div class="vecc-image">
        <p>INGA-2023 at VECC-Kolkata</p>
@@ -128,5 +150,10 @@
         <h2>CV</h2>
         <p>Download my CV: <a href="Bharat_CVU.pdf" target="_blank">Bharat</a></p>
     </div>
+    <script src="navigation.js"></script>
+    <script>
+        // Show the default section on page load
+        showSection('aboutMe');
+    </script>
 </body>
 </html>
