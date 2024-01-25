@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Other Page</title>
+    <!-- Include the same styles as in the main HTML file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Other Page</h1>
+    </header>
+
+    <!-- New navigation section -->
+    <div class="navigation">
+        <button onclick="showSection('section1')" class="active">Section 1</button>
+        <button onclick="showSection('section2')">Section 2</button>
+        <!-- Add more buttons as needed -->
+    </div>
+
+    <!-- Rest of your existing content -->
+
+    <script src="navigation.js"></script>
+    <script>
+        // Show the default section on page load
+        showSection('section1');
+    </script>
+</body>
+</html>
