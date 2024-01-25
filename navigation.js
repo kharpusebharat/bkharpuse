@@ -1,7 +1,7 @@
 // JavaScript function to show/hide sections based on the button clicked
 function showSection(sectionId) {
     // Hide all sections
-    document.querySelectorAll('.profile-container, .contact-info, .publications').forEach(function(section) {
+    document.querySelectorAll('.profile-details, .contact-info, .publications').forEach(function(section) {
         section.style.display = 'none';
     });
 
