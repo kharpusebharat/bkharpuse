@@ -32,7 +32,6 @@
 
         .profile-details {
             flex: 1;
-            margin-left: 20px; /* Add some space between profile and details */
             text-align: center;
            
         }
@@ -60,9 +59,8 @@
             width: 300px; /* Adjusted width */
             height: 250px; /* Adjusted height */
             display: block;
-            position: absolute;
-            top: 120px; /* Adjusted top position */
-            right: 10px; /* Adjusted right position */
+            margin-left: 20px;
+           
         }
         .navigation {
             text-align: center;
@@ -88,19 +86,18 @@
     </header>
     <!-- New navigation section -->
     <div class="navigation">
+         <button onclick="showSection('home')">Home</button>
         <button onclick="showSection('profile-details')" class="active">About Me</button>
          <button onclick="showSection('research')">Research</button>
         <button onclick="showSection('publications')">Publications</button>
         <button onclick="showSection('contact-info')">Contact</button>
     </div>
    
-    <div class="profile-container profile-details">
+    <div class="profile-container profile-details style="display: none;">
         <p>I am a Junior Research Fellow under the SERB project in the field of nuclear physics at IIT-Roorkee, India <br> My research interests include the study of nuclear structure and nucleon reaction. </p>
      
         <img class="profile-image" src="bharat_img.jpeg" alt="Profile Image">
-        <div class="profile-details">
-            <img class="vecc-image" src="bharat_vecc.jpg" alt="vecc image">
- <div class="vecc-image">
+        <div class="vecc-image">
        <p>INGA-2023 at VECC-Kolkata</p> 
      
      <!-- Your existing content -->
@@ -158,8 +155,7 @@
    <script src="navigation.js"></script>
     <script>
         // Show the default section on page load
-        showSection('profile-details');
-        showSection('publication');
+      showSection('home');
      }
     </script>
 </body>
