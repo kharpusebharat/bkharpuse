@@ -5,66 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mr. Bharat Kharpuse</title>
     <style>
-        body {
+       body {
             font-family: Arial, sans-serif;
             background-color: #f8f9fa; /* Light gray background */
             color: #343a40; /* Dark text color */
             margin: 0;
             padding: 0;
+            display: flex;
+            flex-direction: column;
         }
 
         header {
-            background-color: #007bff; /* Blue header background */
+           background-color: #007bff; /* Blue header background */
             color: #fff; /* White text color */
-            text-align: center;
+            text-align: left;
             padding: 10px; /* Reduced header padding */
             margin-bottom: 10px; /* Add some space below the header */
-        }
-
-        .profile-container {
             display: flex;
-            flex-direction: row;
-            align-items: flex-start;
-            margin-bottom: 20px; /* Add some space below the profile container */
-            padding: 20px;
-            border-radius: 10px; /* Add rounded corners */
+            justify-content: space-between;
+            align-items: center;
         }
-
-        .profile-details {
-            flex: 1;
-            text-align: center;
-           
-        }
-         .publication {
-             flex: 1;
-             margin-left: 20px
-             text-align: left;
-        }
-
-        .profile-image {
-            width: 250px;
-            height: 250px;
-            border-radius: 50%;
-            margin: 20px auto;
-            display: block;
-        }
-
-        .contact-info {
-            flex: 1;
-             margin-right: 120px
-             text-align: right;
-        }
-
-        .vecc-image {
-            width: 300px; /* Adjusted width */
-            height: 250px; /* Adjusted height */
-            display: block;
-            margin-left: 20px;
-           
-        }
-        .navigation {
+          .title {
+            margin: 0;
+       }
+       .navigation {
             text-align: center;
             margin-bottom: 20px;
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
         }
         .navigation button {
             background-color: #007bff;
@@ -78,12 +47,59 @@
         .active {
             background-color: #0056b3;
         }
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        
+      .profile-container {
+            width: 100%;
+            max-width: 800px; /* Adjusted maximum width */
+            display: none;
+            margin-bottom: 20px; /* Add some space below the profile container */
+            padding: 20px;
+            border-radius: 10px; /* Add rounded corners */   
+      }
+      .profile-details {
+            flex: 1;
+            text-align: center;
+        }
+
+        .profile-image {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        .vecc-image {
+            width: 300px; /* Adjusted width */
+            height: 250px; /* Adjusted height */
+            margin-left: 20px;
+        }
+
+        .research,
+        .publications,
+        .contact-info {
+            width: 100%;
+            max-width: 800px; /* Adjusted maximum width */
+            display: none;
+        }
+
+        .research h2,
+        .publications h2,
+        .contact-info h2 {
+            text-align: center;
+        }
+        
     </style>
 </head>
 <body>
     <header>
-        <h1>Mr. Bharat Kharpuse</h1>
-    </header>
+          <h1 class="title">Mr. Bharat Kharpuse</h1>
+    
     <!-- New navigation section -->
     <div class="navigation">
          <button onclick="showSection('home')">Home</button>
@@ -92,18 +108,17 @@
         <button onclick="showSection('publications')">Publications</button>
         <button onclick="showSection('contact-info')">Contact</button>
     </div>
-   
-    <div class="profile-container profile-details style="display: none;">
-        <p>I am a Junior Research Fellow under the SERB project in the field of nuclear physics at IIT-Roorkee, India <br> My research interests include the study of nuclear structure and nucleon reaction. </p>
-     
-        <img class="profile-image" src="bharat_img.jpeg" alt="Profile Image">
-        <div class="vecc-image">
-       <p>INGA-2023 at VECC-Kolkata</p> 
-     
-     <!-- Your existing content -->
-</div> 
+  </header> 
+    
+   <div class="main-content">
+        <div class="profile-container profile-details">
+            <p>I am a Junior Research Fellow under the SERB project in the field of nuclear physics at IIT-Roorkee, India <br> My research interests include the study of nuclear structure and nucleon reaction. </p>
+            <img class="profile-image" src="bharat_img.jpeg" alt="Profile Image">
+            <div class="vecc-image">
+                <p>INGA-2023 at VECC-Kolkata</p>
+                <!-- Your existing content -->
+            </div>
         </div>
-    </div>
 
     <div class="profile-container research" style="display: none;">
         <h2>Research Interests</h2>
@@ -144,13 +159,14 @@
                 </ol>
            </div>
        
-   <div class="contact-info" style="display: none;">
-        <h2>Contact Information</h2>
-        <p>Email: bharatkharpuse@gmail.com</p>
-        <p> <a href="https://www.linkedin.com/in/bharat-pawar-369728161/">LinkedIn</a></p>
-        <p> <a href="https://www.researchgate.net/profile/Bharat_Kharpuse2">Research Gate</a></p>
-        <h2>CV</h2>
-        <p>Download my CV: <a href="Bharat_CVU.pdf" target="_blank">Bharat</a></p>
+  <div class="profile-container contact-info" style="display: none;">
+            <h2>Contact Information</h2>
+            <p>Email: bharatkharpuse@gmail.com</p>
+            <p> <a href="https://www.linkedin.com/in/bharat-pawar-369728161/">LinkedIn</a></p>
+            <p> <a href="https://www.researchgate.net/profile/Bharat_Kharpuse2">Research Gate</a></p>
+            <h2>CV</h2>
+            <p>Download my CV: <a href="Bharat_CVU.pdf" target="_blank">Bharat</a></p>
+        </div>
     </div>
    <script src="navigation.js"></script>
     <script>
