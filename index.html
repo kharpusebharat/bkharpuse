@@ -1,203 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mr. Bharat Kharpuse</title>
-    <style>
-       body {
-            font-family: Arial, sans-serif;
-            background-color: #f8f9fa; /* Light gray background */
-            color: #343a40; /* Dark text color */
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bharat Kharpuse | Nuclear Physicist</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f6f9;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
 
-        header {
-           background-color: #ffffff; /* white header background */
-            color: #fff; /* White text color */
-            text-align: left;
-            padding: 10px; /* Reduced header padding */
-            margin-bottom: 10px; /* Add some space below the header */
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-          .title {
-            color: #000000; /* Blue color for the title */
-    font-weight: bold
-       }
-       .navigation {
-            text-align: center;
-            margin-bottom: 20px;
-            display: flex;
-            justify-content: flex-end;
-            gap: 10px;
-        }
-        .navigation button {
-            background-color: #ffffff;
-            color: #000000;
-            padding: 10px 20px;
-            margin: 0 10px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .active {
-            background-color: #0056b3;
-        }
-        .main-content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 20px;
-        }
-        
-      .profile-container {
-            width: 100%;
-            max-width: 800px; /* Adjusted maximum width */
-            display: none;
-            margin-bottom: 20px; /* Add some space below the profile container */
-            padding: 20px;
-            border-radius: 10px; /* Add rounded corners */   
+    header {
+      background-color: #1a1a2e;
+      color: #fff;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .title {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .navigation {
+      display: flex;
+      gap: 10px;
+    }
+
+    .navigation button {
+      background-color: #ffffff;
+      color: #1a1a2e;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: 500;
+    }
+
+    .navigation button.active {
+      background-color: #007bff;
+      color: white;
+    }
+
+    .main-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 15px;
+    }
+
+    .profile-container {
+      width: 100%;
+      max-width: 900px;
+      display: none;
+      background-color: #fff;
+      padding: 25px;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .home {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .vecc-image {
+      width: 300px;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .home-text {
+      max-width: 500px;
+      font-size: 1.1rem;
+      font-weight: bold;
+    }
+
+    .profile-image {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
+    .profile-details,
+    .research,
+    .publications,
+    .contact-info {
+      text-align: center;
+    }
+
+    h2 {
+      color: #0056b3;
+      margin-bottom: 15px;
+    }
+
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    ul, ol {
+      text-align: left;
+      padding-left: 20px;
+    }
+
+    ol li {
+      margin-bottom: 12px;
+    }
+
+    @media (max-width: 768px) {
+      .home {
+        flex-direction: column;
       }
-      .profile-details {
-            flex: 1;
-            text-align: center;
-        }
-       
 
-        .profile-image {
-            width: 250px;
-            height: 250px;
-            border-radius: 50%;
-            margin-right: 20px;
-        }
-          .home {
-    display: flex;
-    align-items: center;
-        }
-        .vecc-and-text {
-    display: flex;
-    align-items: center;
-        }
-        
-        .vecc-image {
-            width: 300px; /* Adjusted width */
-            height: 250px; /* Adjusted height */
-            margin-left: 20px;
-            color: #fff;
-        }
-     .home-text {
-    font-weight: bold;
-    font-size: 1.2em; /* Adjust the font size as needed */
-    max-width: 700px; /* Adjust the maximum width for better alignment */
-     margin-left: 20px;
-     }
+      .vecc-image {
+        width: 90%;
+      }
 
-        .research,
-        .publications,
-        .contact-info {
-            width: 100%;
-            max-width: 800px; /* Adjusted maximum width */
-            display: none;
-        }
-
-        .research h2,
-        .publications h2,
-        .contact-info h2 {
-            text-align: center;
-        }
-        
-    </style>
+      .home-text {
+        text-align: center;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-          <h1 class="title">Mr. Bharat Kharpuse</h1>
-    
-    <!-- New navigation section -->
+  <header>
+    <div class="title">Mr. Bharat Kharpuse</div>
     <div class="navigation">
-         <button onclick="showSection('home')">Home</button>
-        <button onclick="showSection('profile-details')" class="active">About Me</button>
-         <button onclick="showSection('research')">Research</button>
-        <button onclick="showSection('publications')">Publications</button>
-        <button onclick="showSection('contact-info')">Contact</button>
+      <button onclick="showSection('home')" class="active">Home</button>
+      <button onclick="showSection('profile-details')">About Me</button>
+      <button onclick="showSection('research')">Research</button>
+      <button onclick="showSection('publications')">Publications</button>
+      <button onclick="showSection('contact-info')">Contact</button>
     </div>
-  </header> 
-    
-   <div class="main-content">
-       <div class="profile-container home">
-           <div class="vecc-and-text">
-           <img class="vecc-image" src="bharat_vecc.jpg" alt="VECC Image"> 
-               <div class="home-text">
-            <p> Welcome to the home page of Mr. Bharat Kharpuse </p>
-            </div>
-                </div>
-          </div>
-           <div class="profile-container profile-details">
-           
-             <img class="profile-image" src="bharat_img.jpeg" alt="Profile Image">
-           <p>I am a Junior Research Fellow under the SERB project in the field of nuclear physics, India <br> My research interests include the study of nuclear structure and nucleon reaction. </p>
-                <h2>CV</h2>
-            <p>Download my CV: <a href="Bharat_CVU.pdf" target="_blank">Bharat</a></p>
-                <!-- Your existing content -->
-            
-        </div>
+  </header>
 
-    <div class="profile-container research" style="display: none;">
-        <h2>Research Interests</h2>
-        <ul>
-            <li>Nuclear Structure</li>
-            <li>Gamma-ray Spectroscopy</li>
-            <li>Nuclear Reaction</li>
-        </ul>
+  <div class="main-content">
+    <!-- Home Section -->
+    <div class="profile-container home" id="home">
+      <img class="vecc-image" src="bharat_vecc.jpg" alt="VECC Image" />
+      <div class="home-text">
+        <p>Welcome to the personal research page of <strong>Mr. Bharat Kharpuse</strong>. Explore my academic profile, research contributions, and publications in the field of nuclear physics.</p>
+      </div>
     </div>
-             
-          <div class="profile-container publications" style="display: none;">
-        <h2>Publications</h2>
-        <ol>
-                    <li>
-                <strong>Bharat Kharpuse</strong>, Sramana Biswas, K. Bhandary, S. Barman, A. Biswas, A. Goswami, S. Maiti, A.K. Mondal, U.S. Ghosh, S. Rai, K. Mandal, S. Mondal, Saumyajit Biswas, B. Mukherjee, A. Chakraborty, U.D. Pramanik, S. Chakraborty, Yashraj, I. Bala, K. Katre, A. Sharma, R.P. Singh, S. Muralithar.
-                <em>"In-beam γ-ray spectroscopy of <sup>69</sup>Ge".</em>  <a href="https://inspirehep.net/files/f4641f4fd6aeb3f8e24a72537413a0c5">Link</a>
-            </li>
-            <li>
-                Sramana Biswas, <strong>B. Kharpuse</strong>, K. Bhandary, S. Barman, A. Biswas, A. Goswami, S. Maiti, A.K. Mondal, U.S. Ghosh, S. Rai, K. Mandal, S. Mondal, Saumyajit Biswas, B. Mukherjee, A. Chakraborty, U.D. Pramanik, Yashraj, I. Bala, K. Katre, A. Sharma, R.P. Singh, S. Muralithar.
-                <em>"Yield distribution of fusion evaporation reaction <sup>28</sup>Si+ <sup>48</sup>Ti by gamma-ray spectroscopy".</em> <a href="https://inspirehep.net/files/7ea5acd798e644d724b427da46ae0ead">Link</a>
-            </li>
-            <li>
-                A. Basak, A.K. Mondal, <strong>B. Kharpuse</strong>, B. Mukherjee, and A. Chakraborty.
-                <em>"Coexisting Features in <sup>68</sup>Zn".</em>  <a href="https://inspirehep.net/files/c187de064ddf8cd540b7c80dae7f613e">Link</a> 
-            </li>
-            <li>
-                A.K. Mondal, A. Basak, K. Mandal, <strong>B. Kharpuse</strong>, U.S. Ghosh, Aniruddha Dey, S. Biswas, B. Mukherjee, Krishichayan, S. Chatterjee, S.K. Das, S. Samanta, R. Raut, S.S. Ghugre, S. Rajbanshi, R. Banik, S. Bhattacharyya, S. Nandi, S. Bhattacharya, G. Mukherjee, S. Ali, A. Goswami, R. Chakrabarti, A. Kumar, S. Mukhopadhyay, and A. Chakraborty.
-                <em>"Low-lying level sequences in <sup>76</sup>As".</em>  <a href="https://inspirehep.net/files/c20ac04331f57b46e0c9ccd001f724b2">Link</a>
-            </li>
-            </li>
-            <li>
-                <strong>B. Kharpuse</strong>, B. Mukherjee, A. Chakraborty, S. Biswas, K. Debnath, A. Bairagya, A. Basak, A. Goswami, S. Barman, A.K. Mondal, and U.S. Ghosh.
-                <em>"Shell Model Description of Octupole Correlation in <sup>68</sup>Zn & <sup>66,68</sup> Ge".</em> <span>Abstract accepted in International Conference on Recent Trends in Physics (ICRTP-2023)</span> 
-            </li>
-            <li>
-                A. Goswami, B. Mukherjee, S. Barman, U.S. Ghosh, S. Biswas, <strong>B. Kharpuse</strong>, and A. Chakraborty.
-                <em>"A Shell Model Description of Nuclear Structure in <sup>67,68</sup>Zn".</em> <span>DAE-BRNS Proceeding-2022</span>
-            </li>
-                </ol>
-           </div>
-       
-  <div class="profile-container contact-info" style="display: none;">
-            <h2>Contact Information</h2>
-            <p>Email: bharatkharpuse@gmail.com</p>
-            <p> <a href="https://www.linkedin.com/in/bharat-pawar-369728161/">LinkedIn</a></p>
-            <p> <a href="https://www.researchgate.net/profile/Bharat_Kharpuse2">Research Gate</a></p>
-           
-        </div>
+
+    <!-- About Me Section -->
+    <div class="profile-container profile-details" id="profile-details">
+      <img class="profile-image" src="bharat_img.jpeg" alt="Bharat Kharpuse" />
+      <p>I am a Junior Research Fellow under a SERB-sponsored project in India, working in the field of nuclear physics. My primary interests are in nuclear structure and nucleon-induced reactions.</p>
+      <h2>Curriculum Vitae</h2>
+      <p>Download my CV: <a href="Bharat_CVU.pdf" target="_blank">Click here</a></p>
     </div>
-   <script src="navigation.js"></script>
-    <script>
-        // Show the default section on page load
+
+    <!-- Research Section -->
+    <div class="profile-container research" id="research">
+      <h2>Research Interests</h2>
+      <ul>
+        <li>Nuclear Structure</li>
+        <li>Gamma-ray Spectroscopy</li>
+        <li>Fusion-Evaporation Reactions</li>
+        <li>Shell Model Calculations</li>
+      </ul>
+    </div>
+
+    <!-- Publications Section -->
+    <div class="profile-container publications" id="publications">
+      <h2>Publications</h2>
+      <ol>
+        <li><strong>Bharat Kharpuse</strong> et al., <em>“In-beam γ-ray spectroscopy of <sup>69</sup>Ge”</em>, <a href="https://inspirehep.net/files/f4641f4fd6aeb3f8e24a72537413a0c5">View</a></li>
+        <li>Sramana Biswas, <strong>B. Kharpuse</strong> et al., <em>“Yield distribution of fusion evaporation reaction <sup>28</sup>Si + <sup>48</sup>Ti”</em>, <a href="https://inspirehep.net/files/7ea5acd798e644d724b427da46ae0ead">View</a></li>
+        <li>A. Basak, <strong>B. Kharpuse</strong> et al., <em>“Coexisting Features in <sup>68</sup>Zn”</em>, <a href="https://inspirehep.net/files/c187de064ddf8cd540b7c80dae7f613e">View</a></li>
+        <li>A.K. Mondal, <strong>B. Kharpuse</strong> et al., <em>“Low-lying level sequences in <sup>76</sup>As”</em>, <a href="https://inspirehep.net/files/c20ac04331f57b46e0c9ccd001f724b2">View</a></li>
+        <li><strong>B. Kharpuse</strong> et al., <em>“Shell Model Description of Octupole Correlation in <sup>68</sup>Zn & <sup>66,68</sup>Ge”</em> – Abstract accepted, ICRTP-2023</li>
+        <li>A. Goswami, <strong>B. Kharpuse</strong> et al., <em>“A Shell Model Description of Nuclear Structure in <sup>67,68</sup>Zn”</em> – DAE-BRNS Proceedings, 2022</li>
+      </ol>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="profile-container contact-info" id="contact-info">
+      <h2>Contact Information</h2>
+      <p>Email: <a href="mailto:bharatkharpuse@gmail.com">bharatkharpuse@gmail.com</a></p>
+      <p><a href="https://www.linkedin.com/in/bharat-pawar-369728161/" target="_blank">LinkedIn</a></p>
+      <p><a href="https://www.researchgate.net/profile/Bharat_Kharpuse2" target="_blank">ResearchGate</a></p>
+    </div>
+  </div>
+
+  <script>
+    function showSection(id) {
+      const sections = document.querySelectorAll('.profile-container');
+      const buttons = document.querySelectorAll('.navigation button');
+      sections.forEach(section => section.style.display = 'none');
+      buttons.forEach(btn => btn.classList.remove('active'));
+      document.getElementById(id).style.display = 'block';
+      event.target.classList.add('active');
+    }
+
+    // Default section
+    window.onload = () => {
       showSection('home');
-    </script>
+    };
+  </script>
 </body>
 </html>
